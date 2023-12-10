@@ -22,12 +22,3 @@ RUN make build
 RUN make install
 
 WORKDIR /var/lua/sample-plugin
-
-# Run image using:
-# docker run --rm -it -v $(pwd)/sample-plugin:/var/lua/sample-plugin luasucks
-
-# In sample-plugin/kong-plugin-myplugin-0.1.0-1.rockspec:
-# modify local git_checkout to set value to "master"
-
-# In the interactive shell, run:
-# luarocks pack kong-plugin-myplugin-0.1.0-1.rockspec
